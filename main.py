@@ -81,7 +81,7 @@ async def text_handler(_, m: Message):
             text += f"**Title:** `{data[i]['title']}`\n" \
                     f"**Description:** `{data[i]['description']}`\n" \
                     f"**PDisk Link:** {Configs.PDISK_DOMAIN + 'share-video?videoid=' + data[i]['share_link'].split('=', 1)[-1]}\n\n"
-                     f"**A bot made by @tmamovies }\n\n"
+                     f"**A bot made by @tmamovies \n\n"
         try: await editable.edit(text, disable_web_page_preview=True)
         except MessageNotModified: pass
 
